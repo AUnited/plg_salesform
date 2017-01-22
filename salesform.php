@@ -43,7 +43,21 @@ class plgSystemsalesform extends JPlugin
 		//getting body code and storing as buffer
 		$buffer = JResponse::getBody();
 		
-		$script	=  " ";
+		$script	=  "<!-- Salesform Consultant -->
+<script type='text/javascript'>(function() {
+var b=document;
+(function(a){var c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)})(function(){
+ var d = b.createElement('script');
+ d.type ='text/javascript';
+ d.async = true;
+ d.src = 'https://api.salesform.ru/sfc/".$id."';
+ var e = b.getElementsByTagName('script')[0];
+ if ( e ) e.parentNode.insertBefore(d, e);
+ else b.documentElement.firstChild.appendChild(d);
+});
+})();
+</script>
+<!-- /Salesform Consultant -->";
 
 		//is it enabled?
 		$javascript='';
