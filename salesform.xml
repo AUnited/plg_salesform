@@ -28,11 +28,11 @@
               <option value="0">JNo</option>
               <option value="1">JYes</option>
 		</field> 
-            <field name="id" type="text" default="XXXXXXXXXX" label="PLG_SYS_SALESFORM_ID" description="PLG_SYS_SALESFORM_ID_DESC"> </field>
+            <field name="id" type="text" default="XXXXXXXXXX" label="PLG_SYS_SALESFORM_ID" description="PLG_SYS_SALESFORM_ID_DESC" />
         </fieldset>
     </fields>
   </config>
     <updateservers>
-        <server type="extension" priority="1" name="salesform"><![CDATA[http://help.aunited.ru/salesform/update/salesform-update.xml]]></server>
+        <server type="extension" priority="1" name="salesform"><![CDATA[http://help.aunited.ru/leadgen/update/leadgen-update.xml]]></server>
     </updateservers>
 </extension>
